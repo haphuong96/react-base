@@ -8,3 +8,9 @@
 //     "is_best_seller": true,
 //     "thumbnail": null
 // }
+
+function MenuItem() {
+  return <div>MenuItem</div>;
+}
+
+export default MenuItem;
