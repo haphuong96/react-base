@@ -27,4 +27,14 @@
 
 /* TODO : Add styles for the slider dots */
 .slider-dots {
+  bottom: 40px;
+}
+
+.slider-dots li button::before {
+  color: #ffffff99;
+  font-size: 16px;
+}
+
+.slider-dots li.slick-active button::before {
+  color: #970024;
 }
