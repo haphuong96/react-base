@@ -1,3 +1,5 @@
+@reference "../../../index.css";
+
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -25,16 +27,15 @@
   right: 20px;
 }
 
-/* TODO : Add styles for the slider dots */
 .slider-dots {
-  bottom: 40px;
+  bottom: theme(spacing.7);
 }
 
 .slider-dots li button::before {
   color: #ffffff99;
-  font-size: 16px;
+  font-size: theme(text.xs);
 }
 
 .slider-dots li.slick-active button::before {
-  color: #970024;
+  color: theme(color.primary.red);
 }
