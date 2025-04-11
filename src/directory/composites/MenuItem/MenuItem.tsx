@@ -2,8 +2,8 @@ import { Button } from "@/commons/components/Button/Button";
 import { Text } from "@/commons/components/Text/Text";
 // import jumbotron3 from "@/directory/assets/jumbotron3.png";
 import Price from "@/directory/components/Price/Price";
-import StarRating from "@/directory/components/StarRating/StarRating";
-import CardImage from "./CardImage";
+import StarRating from "@/commons/components/StarRating/StarRating";
+import Image from "@/commons/components/Image/Image";
 
 function MenuItem() {
   // const { name, price, current_price, is_best_seller, thumbnail } = item;
@@ -21,10 +21,10 @@ function MenuItem() {
     <div className="w-64 bg-white rounded-lg overflow-hidden shadow-md">
       {/* Image Container */}
       <div className="relative bg-gray-100 rounded-t-lg p-2">
-        <CardImage
-          thumbnail={item.thumbnail}
+        <Image
+          src={item.thumbnail}
           name={item.name}
-          className="classNamew-full h-48 rounded-xl"
+          className="object-cover w-full h-48 rounded-xl"
         />
       </div>
 

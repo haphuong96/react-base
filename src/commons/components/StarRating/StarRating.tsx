@@ -1,4 +1,10 @@
-function StarRating({ point, maxPoint }: { point: number; maxPoint: number }) {
+interface StarRatingProps {
+  point: number;
+  maxPoint?: number;
+  className?: string;
+}
+
+function StarRating({ point, maxPoint = 5, className }: StarRatingProps) {
   if (point > maxPoint) {
     point = maxPoint;
   }
@@ -7,7 +13,7 @@ function StarRating({ point, maxPoint }: { point: number; maxPoint: number }) {
   }
 
   return (
-    <div className="flex mb-2">
+    <div className={`${className} flex mb-2`}>
       {[...Array(point)].map((_, i) => (
         <span key={i} className="text-yellow-400">
           ★
